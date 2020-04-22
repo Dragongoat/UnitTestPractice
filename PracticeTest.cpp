@@ -97,3 +97,10 @@ TEST(PracticeTest, alphanumeric_symbol_palindrome)
     bool actual = obj.isPalindrome("!a67g?g76a!");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, space_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("a g g a");
+    ASSERT_TRUE(actual);
+}
