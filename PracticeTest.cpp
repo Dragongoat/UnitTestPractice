@@ -20,3 +20,52 @@ TEST(PracticeTest, is_simple_palindrome)
     bool actual = obj.isPalindrome("aa");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, is_single_char_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("a");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_empty_string_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, different_case_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("xX");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_digit_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("11");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, not_digit_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("21");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_symbol_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("??");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, not_symbol_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("?.");
+    ASSERT_TRUE(actual);
+}
