@@ -53,7 +53,7 @@ TEST(PracticeTest, not_digit_palindrome)
 {
     Practice obj;
     bool actual = obj.isPalindrome("21");
-    ASSERT_TRUE(actual);
+    ASSERT_FALSE(actual);
 }
 
 TEST(PracticeTest, is_symbol_palindrome)
@@ -67,5 +67,5 @@ TEST(PracticeTest, not_symbol_palindrome)
 {
     Practice obj;
     bool actual = obj.isPalindrome("?.");
-    ASSERT_TRUE(actual);
+    ASSERT_FALSE(actual);
 }
