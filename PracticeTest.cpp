@@ -172,7 +172,7 @@ TEST(PracticeTest, equal_first_sortDescending)
 	int second = 1;
 	int third = 1;
     obj.sortDescending(first, second, third);
-    ASSERT_EQ(first, 3);
+    ASSERT_EQ(first, 1);
 }
 
 TEST(PracticeTest, equal_second_sortDescending)
@@ -182,7 +182,7 @@ TEST(PracticeTest, equal_second_sortDescending)
 	int second = 1;
 	int third = 1;
     obj.sortDescending(first, second, third);
-    ASSERT_EQ(second, 2);
+    ASSERT_EQ(second, 1);
 }
 
 TEST(PracticeTest, equal_third_sortDescending)
