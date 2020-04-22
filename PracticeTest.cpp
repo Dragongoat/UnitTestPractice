@@ -111,7 +111,7 @@ TEST(PracticeTest, simple_first_sortDescending)
 	int first = 1;
 	int second = 2;
 	int third = 3;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(first, 3);
 }
 
@@ -121,7 +121,7 @@ TEST(PracticeTest, simple_second_sortDescending)
 	int first = 1;
 	int second = 2;
 	int third = 3;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(second, 2);
 }
 
@@ -131,7 +131,7 @@ TEST(PracticeTest, simple_third_sortDescending)
 	int first = 1;
 	int second = 2;
 	int third = 3;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(third, 1);
 }
 
@@ -141,7 +141,7 @@ TEST(PracticeTest, simple_reverse_first_sortDescending)
 	int first = 3;
 	int second = 2;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(first, 3);
 }
 
@@ -151,7 +151,7 @@ TEST(PracticeTest, simple_reverse_second_sortDescending)
 	int first = 3;
 	int second = 2;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(second, 2);
 }
 
@@ -161,7 +161,7 @@ TEST(PracticeTest, simple_reverse_third_sortDescending)
 	int first = 3;
 	int second = 2;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(third, 1);
 }
 
@@ -171,7 +171,7 @@ TEST(PracticeTest, equal_first_sortDescending)
 	int first = 1;
 	int second = 1;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(first, 3);
 }
 
@@ -181,7 +181,7 @@ TEST(PracticeTest, equal_second_sortDescending)
 	int first = 1;
 	int second = 1;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(second, 2);
 }
 
@@ -191,7 +191,7 @@ TEST(PracticeTest, equal_third_sortDescending)
 	int first = 1;
 	int second = 1;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(third, 1);
 }
 
@@ -201,7 +201,7 @@ TEST(PracticeTest, one_two_alike_lesser_first_sortDescending)
 	int first = 1;
 	int second = 1;
 	int third = 3;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(first, 3);
 }
 
@@ -211,7 +211,7 @@ TEST(PracticeTest, one_two_alike_lesser_second_sortDescending)
 	int first = 1;
 	int second = 1;
 	int third = 3;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(second, 1);
 }
 
@@ -221,7 +221,7 @@ TEST(PracticeTest, one_two_alike_lesser_third_sortDescending)
 	int first = 1;
 	int second = 1;
 	int third = 3;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(third, 1);
 }
 
@@ -231,7 +231,7 @@ TEST(PracticeTest, one_two_alike_greater_first_sortDescending)
 	int first = 1;
 	int second = 1;
 	int third = 0;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(first, 1);
 }
 
@@ -241,7 +241,7 @@ TEST(PracticeTest, one_two_alike_greater_second_sortDescending)
 	int first = 1;
 	int second = 1;
 	int third = 0;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(second, 1);
 }
 
@@ -251,7 +251,7 @@ TEST(PracticeTest, one_two_alike_greater_third_sortDescending)
 	int first = 1;
 	int second = 1;
 	int third = 0;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(third, 0);
 }
 
@@ -261,7 +261,7 @@ TEST(PracticeTest, one_three_alike_lesser_first_sortDescending)
 	int first = 1;
 	int second = 3;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(first, 3);
 }
 
@@ -271,7 +271,7 @@ TEST(PracticeTest, one_three_alike_lesser_second_sortDescending)
 	int first = 1;
 	int second = 3;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(second, 1);
 }
 
@@ -281,7 +281,7 @@ TEST(PracticeTest, one_three_alike_lesser_third_sortDescending)
 	int first = 1;
 	int second = 3;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(third, 1);
 }
 
@@ -291,7 +291,7 @@ TEST(PracticeTest, one_three_alike_greater_first_sortDescending)
 	int first = 1;
 	int second = 0;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(first, 1);
 }
 
@@ -301,7 +301,7 @@ TEST(PracticeTest, one_three_alike_greater_second_sortDescending)
 	int first = 1;
 	int second = 0;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(second, 1);
 }
 
@@ -311,7 +311,7 @@ TEST(PracticeTest, one_three_alike_greater_third_sortDescending)
 	int first = 1;
 	int second = 0;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(third, 0);
 }
 
@@ -321,7 +321,7 @@ TEST(PracticeTest, two_three_alike_lesser_first_sortDescending)
 	int first = 3;
 	int second = 1;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(first, 3);
 }
 
@@ -331,7 +331,7 @@ TEST(PracticeTest, two_three_alike_lesser_second_sortDescending)
 	int first = 3;
 	int second = 1;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(second, 1);
 }
 
@@ -341,7 +341,7 @@ TEST(PracticeTest, two_three_alike_lesser_third_sortDescending)
 	int first = 3;
 	int second = 1;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(third, 1);
 }
 
@@ -351,7 +351,7 @@ TEST(PracticeTest, two_three_alike_greater_first_sortDescending)
 	int first = 0;
 	int second = 1;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(first, 1);
 }
 
@@ -361,7 +361,7 @@ TEST(PracticeTest, two_three_alike_greater_second_sortDescending)
 	int first = 0;
 	int second = 1;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(second, 1);
 }
 
@@ -371,6 +371,6 @@ TEST(PracticeTest, two_three_alike_greater_third_sortDescending)
 	int first = 0;
 	int second = 1;
 	int third = 1;
-    obj.sortDescending(&first, &second, &third);
+    obj.sortDescending(first, second, third);
     ASSERT_EQ(third, 0);
 }
