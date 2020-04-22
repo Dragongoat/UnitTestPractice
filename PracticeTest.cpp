@@ -87,8 +87,8 @@ TEST(PracticeTest, not_symbol_palindrome)
 TEST(PracticeTest, is_unreadable_palindrome)
 {
     Practice obj;
-    bool actual = obj.isPalindrome("\n\r\n");
-    ASSERT_TRUE(actual);
+    bool actual = obj.isPalindrome("\n\r");
+    ASSERT_FALSE(actual);
 }
 
 TEST(PracticeTest, alphanumeric_symbol_palindrome)
