@@ -21,6 +21,20 @@ TEST(PracticeTest, is_simple_palindrome)
     ASSERT_TRUE(actual);
 }
 
+TEST(PracticeTest, is_racecar_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("racecar");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_odd_char_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("aba");
+    ASSERT_TRUE(actual);
+}
+
 TEST(PracticeTest, is_single_char_palindrome)
 {
     Practice obj;
@@ -68,4 +82,18 @@ TEST(PracticeTest, not_symbol_palindrome)
     Practice obj;
     bool actual = obj.isPalindrome("?.");
     ASSERT_FALSE(actual);
+}
+
+TEST(PracticeTest, is_unreadable_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("\n\r\n");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, alphanumeric_symbol_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("!a67g?g76a!");
+    ASSERT_TRUE(actual);
 }
